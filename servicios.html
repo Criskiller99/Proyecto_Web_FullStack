@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos para el contenedor del carrusel */
+    .carousel-container {
+      width: 800px; /* Ancho del carrusel */
+      height: 400px; /* Alto del carrusel */
+      overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+      position: relative; /* Establece la posición relativa */
+      margin: 0 auto; /* Centra horizontalmente el carrusel */
+    }
+
+    /* Estilos para el carrusel */
+    .carousel {
+      width: 100%; /* Ancho del carrusel */
+      height: 100%; /* Alto del carrusel */
+      display: flex; /* Utiliza flexbox para el diseño */
+      transition: transform 0.3s ease-in-out; /* Transición suave para el movimiento del carrusel */
+    }
+
+    /* Estilos para cada elemento del carrusel */
+    .carousel-item {
+      width: 100%; /* Ancho de cada elemento del carrusel */
+      height: 100%; /* Alto de cada elemento del carrusel */
+      flex-shrink: 0; /* Evita que los elementos se reduzcan en tamaño */
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="portada.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="portada.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="portada.jpg">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Obtiene el contenedor del carrusel
+    var carouselContainer = document.querySelector('.carousel-container');
+    // Obtiene el carrusel
+    var carousel = document.querySelector('.carousel');
+    // Obtiene los elementos del carrusel
+    var carouselItems = document.querySelectorAll('.carousel-item');
+    // Inicializa el índice del carrusel
+    var currentIndex = 0;
+
+    // Función para mostrar el siguiente elemento del carrusel
+    function showNext() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Establece el intervalo para cambiar automáticamente los elementos del carrusel
+    setInterval(showNext, 3000); // Cambia cada 3 segundos (ajusta el valor según tus necesidades)
+  </script>
+</body>
+</html>
+
