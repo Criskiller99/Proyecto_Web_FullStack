@@ -1,66 +1,132 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    /* Estilos para el contenedor del carrusel */
-    .carousel-container {
-      width: 800px; /* Ancho del carrusel */
-      height: 400px; /* Alto del carrusel */
-      overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
-      position: relative; /* Establece la posición relativa */
-      margin: 0 auto; /* Centra horizontalmente el carrusel */
-    }
-
-    /* Estilos para el carrusel */
-    .carousel {
-      width: 100%; /* Ancho del carrusel */
-      height: 100%; /* Alto del carrusel */
-      display: flex; /* Utiliza flexbox para el diseño */
-      transition: transform 0.3s ease-in-out; /* Transición suave para el movimiento del carrusel */
-    }
-
-    /* Estilos para cada elemento del carrusel */
-    .carousel-item {
-      width: 100%; /* Ancho de cada elemento del carrusel */
-      height: 100%; /* Alto de cada elemento del carrusel */
-      flex-shrink: 0; /* Evita que los elementos se reduzcan en tamaño */
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Mis Servicios</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
 </head>
+
 <body>
-  <div class="carousel-container">
-    <div class="carousel">
-      <div class="carousel-item">
-        <img src="portada.jpg">
+  <header>
+    <nav class="teal darken-1">
+      <ul>
+        <li><a href="index.html"  style="font-size: 15pt;" class="complemento-nav">Inicio</a></li>
+        <li class="align-right"><a href="contacto.html" class="complemento-nav">Contacto</a></li>
+        <li class="align-right"><a href="servicios.html" class="complemento-nav">Servicios</a></li>
+        <li class="align-right"><a href="cv.html" style="font-size: 15pt;" class="complemento-nav">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="espacio"></div>
+  <h4 style="text-align: center;"></h4>
+  <div class="espacio"></div>
+  <main>
+    <div class="row">
+      <div class="col s4">
+        <div class="center-align"><img src="1.jpg" alt="loading..." style="height: 210px;" onmouseover="ver(0,'block')" onmouseout="ver(0,'none')"></div>
       </div>
-      <div class="carousel-item">
-        <img src="portada.jpg">
+      <div class="col s4">
+        <div class="center-align"><img src="2.jpg" alt="loading..." style="height: 210px;" onmouseover="ver(1,'block')" onmouseout="ver(1,'none')"></div>
       </div>
-      <div class="carousel-item">
-        <img src="portada.jpg">
+      <div class="col s4">
+        <div class="center-align"><img src="3.jpeg" alt="loading..." style="height: 210px;" onmouseover="ver(2,'block')" onmouseout="ver(2,'none')"></div>
       </div>
     </div>
-  </div>
+      <!-- Contenido de la segunda fila (texto) -->
+      <div class="row">
+        <div class="col s4 textos3">
+          <p><b>1.	Diseño y desarrollo de sistemas mecatrónicos:</b> Servicios de diseño y desarrollo de sistemas mecatrónicos personalizados para diversas aplicaciones, como robótica industrial, automatización de procesos, sistemas de control y sistemas electromecánicos.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>2.	Optimización de procesos industriales:</b> En base a mis conocimientos en programación y automatización, puedo ayudarte a tu empresa a mejorar la eficiencia de sus procesos industriales mediante la identificación de áreas de mejora, implementación de tecnologías avanzadas y desarrollo de soluciones personalizadas.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>3.	Integración de sistemas:</b> Ofrezco servicios de integración de sistemas, permitiendo la comunicación y colaboración eficiente entre diferentes componentes mecatrónicos, como sensores, actuadores, controladores y software.</p>
+        </div>
+      </div>
+      <div class="espacio5"></div>
+      <!-- Contenido de la primera fila (imagen) -->
+      <div class="row">
+        <div class="col s4">
+          <div class="center-align"><img src="4.png" alt="loading..." style="height: 210px;"  onmouseover="ver(3,'block')" onmouseout="ver(3,'none')"></div>
+        </div>
+        <div class="col s4">
+          <div class="center-align"><img src="5.jpg" alt="loading..." style="height: 210px;"  onmouseover="ver(4,'block')" onmouseout="ver(4,'none')"></div>
+        </div>
+        <div class="col s4">
+          <div class="center-align"><img src="6.jpg" alt="loading..." style="height: 210px;"  onmouseover="ver(5,'block')" onmouseout="ver(5,'none')"></div>
+        </div>
+      </div>
+      <!-- Contenido de la segunda fila (texto) -->
+      <div class="row">
+        <div class="col s4 textos3">
+          <p><b>4.	Consultoría en tecnología mecatrónica:</b> Brindo asesoría y consultoría a empresas que deseen incorporar tecnología mecatrónica en sus operaciones. Esto puede incluir evaluación de necesidades, recomendaciones de soluciones, planificación de proyectos y supervisión de implementación.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>5.	Mantenimiento y soporte técnico:</b> Puedo ofrecer servicios de mantenimiento preventivo y correctivo para sistemas mecatrónicos, asegurando su correcto funcionamiento y solucionando cualquier problema técnico que pueda surgir.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>6.	Diseño de páginas web:</b> Con mis conocimientos en programación, puedo crear y diseñar páginas web atractivas y funcionales que se ajusten a tus necesidades y objetivos comerciales. Utilizaré las últimas tecnologías y estándares web para garantizar una experiencia óptima para los usuarios.</p>
+        </div>
+      </div>
+      <div class="espacio5"></div>
+      <!-- Contenido de la primera fila (imagen) -->
+      <div class="row">
+        <div class="col s4">
+          <div class="center-align"><img src="7.jpg" alt="loading..." style="height: 210px;"  onmouseover="ver(6,'block')" onmouseout="ver(6,'none')"></div>
+        </div>
+        <div class="col s4">
+          <div class="center-align"><img src="8.jpg" alt="loading..." style="height: 210px;"  onmouseover="ver(7,'block')" onmouseout="ver(7,'none')"></div>
+        </div>
+        <div class="col s4">
+          <div class="center-align"><img src="9.jpg" alt="loading..." style="height: 210px;"  onmouseover="ver(8,'block')" onmouseout="ver(8,'none')"></div>
+        </div>
+      </div>
+      <!-- Contenido de la segunda fila (texto) -->
+      <div class="row">
+        <div class="col s4 textos3">
+          <p><b>7.	Diseño mecánico en planos 2D con AutoCAD y piezas 3D con SolidWorks:</b> Puedo ayudarte a crear diseños mecánicos detallados utilizando software como AutoCAD para dibujar planos en 2D y SolidWorks para generar modelos en 3D. Estos diseños pueden abarcar desde componentes y conjuntos mecánicos hasta estructuras y sistemas complejos.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>8.	Integración de servicios IoT:</b> Si deseas conectar tus dispositivos y sistemas a la red y aprovechar la capacidad de recopilación y análisis de datos, puedo ayudarte a integrar servicios de IoT. Esto incluye la configuración de sensores, la implementación de protocolos de comunicación y el desarrollo de aplicaciones personalizadas para control y monitoreo remoto.</p>
+        </div>
+        <div class="col s4 textos3">
+          <p><b>9.	Servicio de balanceo hidrónico para sistemas HVAC:</b> Puedo proporcionarte un servicio de balanceo hidrónico para sistemas de calefacción, ventilación y aire acondicionado (HVAC, por sus siglas en inglés). Esto implica ajustar y equilibrar el flujo de agua en los sistemas para garantizar un rendimiento óptimo y una distribución adecuada del calor o el enfriamiento.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="espacio5"></div>
 
-  <script>
-    // Obtiene el contenedor del carrusel
-    var carouselContainer = document.querySelector('.carousel-container');
-    // Obtiene el carrusel
-    var carousel = document.querySelector('.carousel');
-    // Obtiene los elementos del carrusel
-    var carouselItems = document.querySelectorAll('.carousel-item');
-    // Inicializa el índice del carrusel
-    var currentIndex = 0;
-
-    // Función para mostrar el siguiente elemento del carrusel
-    function showNext() {
-      currentIndex = (currentIndex + 1) % carouselItems.length;
-      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    // Establece el intervalo para cambiar automáticamente los elementos del carrusel
-    setInterval(showNext, 3000); // Cambia cada 3 segundos (ajusta el valor según tus necesidades)
-  </script>
+  <footer class="page-footer blue lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text">Mi hoja de vida</h5>
+          <p class="text-lighten-4 black-text">Es un pagina realizada para mostrar mi perfil profesional</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="black-text">Contacto:</h5>
+          <ul>
+            <li><a class="black-text text-lighten-3" href="#!">cristianmarin991117@gmail.com</a></li>
+            <li><a class="black-text text-lighten-3" href="#!">Celular: +57 3195534870</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+        © 2023 Copyright Text
+        <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script - servicios.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
 </body>
-</html>
 
+</html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Menú de Página Web</title>
+  <title>Contacto</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="materialize/css/materialize.min.css">
@@ -13,10 +13,10 @@
   <header>
     <nav class="teal darken-1">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li class="align-right"><a href="contacto.html">Contacto</a></li>
-        <li class="align-right"><a href="#">Servicios</a></li>
-        <li class="align-right"><a href="cv.html">CV</a></li>
+        <li><a href="index.html"  style="font-size: 15pt;" class="complemento-nav">Inicio</a></li>
+        <li class="align-right"><a href="contacto.html" class="complemento-nav">Contacto</a></li>
+        <li class="align-right"><a href="servicios.html" class="complemento-nav">Servicios</a></li>
+        <li class="align-right"><a href="cv.html" style="font-size: 15pt;" class="complemento-nav">CV</a></li>
       </ul>
     </nav>
   </header>
@@ -37,6 +37,10 @@
               <input type="text" id="email" name="email" placeholder="Correo electrónico" required>
               <br>
               <br>
+              <label for="text" class="black-text" style="font-size: 14pt;">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+              <br>
+              <br>
               <label for="message" class="black-text" style="font-size: 14pt;">Mensaje:</label>
               <textarea id="message" name="message" rows="8" placeholder="Escribe tu comentario..." style="height: 35%;"
                 required></textarea>
@@ -53,7 +57,7 @@
       <div class="image-container">
         <div class="espacio3"></div>
         <div class="espacio3"></div> 
-        <img src="/JqYP.gif" alt="loading..." style="width: 70%; height: 40%;">
+        <img src="JqYP.gif" alt="loading..." style="width: 70%; height: 40%;">
         <div class="espacio3"></div>  
       </div>
     </div>
