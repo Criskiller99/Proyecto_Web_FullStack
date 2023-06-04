@@ -143,6 +143,14 @@ input[type="submit"]:hover {
   background-color: #50c978;
 }
 
+#cuadro{
+  width: 75%;
+  height: 75%;
+  margin-left: 5%;
+  background-color: #26a69a;
+  border-radius: 1%;
+}
+
 .espacio{
   width: 100px;
   height: 100px;
@@ -189,15 +197,6 @@ input[type="submit"]:hover {
   width: 35%;
   float: right;
   /*border-style: double;*/
-}
-
-#cuadro{
-  width: 75%;
-  height: 75%;
-  margin-left: 5%;
-  /*border-style: solid;*/
-  background-color: #26a69a;
-  border-radius: 1%;
 }
 
 .bordes{

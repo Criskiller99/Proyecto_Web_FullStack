@@ -28,13 +28,13 @@
           <br>
           <div id="cuadro">
             <div class="espacio2"></div>
-            <form action="#" method="post">
+            <form>
               <label for="name" class="black-text" style="font-size: 14pt;">Nombre:</label>
-              <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+              <input type="text" id="nombre" name="name" placeholder="Nombre Completo" required>
               <br>
               <br>
               <label for="email" class="black-text" style="font-size: 14pt;">Correo electrónico:</label>
-              <input type="text" id="email" name="email" placeholder="Correo electrónico" required>
+              <input type="text" id="correo" name="email" placeholder="Correo electrónico" required>
               <br>
               <br>
               <label for="text" class="black-text" style="font-size: 14pt;">Asunto:</label>
@@ -42,11 +42,11 @@
               <br>
               <br>
               <label for="message" class="black-text" style="font-size: 14pt;">Mensaje:</label>
-              <textarea id="message" name="message" rows="8" placeholder="Escribe tu comentario..." style="height: 35%;"
+              <textarea id="descripcion" name="message" rows="8" placeholder="Escribe tu comentario..." style="height: 35%;"
                 required></textarea>
               <p></p>
               <!-- <input class="btn waves-effect waves-light material-icons" type="submit" value="Enviar"> -->
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <button id="buttonForm" class="btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
               </button>
             </form>
@@ -56,7 +56,9 @@
       </div>
       <div class="image-container">
         <div class="espacio3"></div>
-        <div class="espacio3"></div> 
+        <div class="espacio3"  style="width: 500px;">
+          <h5 id="confirmacion" style="padding-top: 20%;"></h5>
+        </div> 
         <img src="JqYP.gif" alt="loading..." style="width: 70%; height: 40%;">
         <div class="espacio3"></div>  
       </div>
@@ -76,7 +78,7 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Contacto:</h5>
           <ul>
-            <li><a class="black-text text-lighten-3" href="#!">cristianmarin991117@gmail.com</a></li>
+            <li><a class="black-text text-lighten-3" href="mailto:cristianmarin991117@gmail.com">cristianmarin991117@gmail.com</a></li>
             <li><a class="black-text text-lighten-3" href="#!">Celular: +57 3195534870</a></li>
           </ul>
         </div>
@@ -89,7 +91,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script - contacto.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
 </body>
 
