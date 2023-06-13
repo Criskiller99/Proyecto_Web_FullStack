@@ -32,27 +32,24 @@ function sendForm() {
         mensaje: descripcionInfo,
     }
 
-        // Localstorage
-        let saveData = localStorage.getItem("Solicitudes"); //Crear clave Solicitudes en localStorage
-        //console.log("value localstorage =>", saveData);
+    // Localstorage
+    let saveData = localStorage.getItem("Solicitudes"); //Crear clave Solicitudes en localStorage
+    //console.log("value localstorage =>", saveData);
 
-        if (saveData) {
-            
-            let data = JSON.parse(saveData);
-            let newData = [...data, personalInfo];
-            localStorage.setItem("Solicitudes", JSON.stringify(newData)); //Envia el value del key Solicitudes
+    if (saveData) {
 
-        } else {
-            let dataInfo = [];
-            dataInfo.push(personalInfo); //llenar el arreglo con los datos del formulario
-            localStorage.setItem("Solicitudes", JSON.stringify(dataInfo)); //enviar datos al localStorage
-            
-        }
+        let data = JSON.parse(saveData);
+        let newData = [...data, personalInfo];
+        localStorage.setItem("Solicitudes", JSON.stringify(newData)); //Envia el value del key Solicitudes
 
-        alert("EL mensaje fue enviado con exito")
+    } else {
+        let dataInfo = [];
+        dataInfo.push(personalInfo); //llenar el arreglo con los datos del formulario
+        localStorage.setItem("Solicitudes", JSON.stringify(dataInfo)); //enviar datos al localStorage
 
+    }
+    alert("EL mensaje fue enviado con exito");
 }
-  
 
 let buttonForm = document.getElementById("buttonForm");
 buttonForm.addEventListener('click', sendForm);
