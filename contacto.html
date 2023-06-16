@@ -13,7 +13,7 @@
   <header>
     <nav class="teal darken-1">
       <ul>
-        <li><a href="index.html"  style="font-size: 15pt;" class="complemento-nav">Inicio</a></li>
+        <li><a href="index.html" style="font-size: 15pt;" class="complemento-nav">Inicio</a></li>
         <li class="align-right"><a href="contacto.html" class="complemento-nav">Contacto</a></li>
         <li class="align-right"><a href="servicios.html" class="complemento-nav">Servicios</a></li>
         <li class="align-right"><a href="cv.html" style="font-size: 15pt;" class="complemento-nav">CV</a></li>
@@ -29,8 +29,33 @@
           <div id="cuadro">
             <div class="espacio2"></div>
             <form>
-              <label for="name" class="black-text" style="font-size: 14pt;">Nombre:</label>
-              <input type="text" id="nombre" name="name" placeholder="Nombre Completo" required>
+              <label for="name" class="black-text" style="font-size: 14pt;">Nombres:</label>
+              <input type="text" id="nombre" name="name" placeholder="Nombres" required>
+              <br>
+              <br>
+              <label for="apellido" class="black-text" style="font-size: 14pt;">Apellidos:</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+              <br>
+              <br>
+              <label for="tipoDocumento" class="black-text" style="font-size: 14pt;">Tipo de documento:</label>
+              <select class="browser-default"  required>
+                <option value="" disabled selected></option>
+                <option value="1" class="tipoDoc">Cédula de ciudadanía</option>
+                <option value="2" class="tipoDoc">Tarjeta de identidad</option>
+                <option value="3" class="tipoDoc">Pasaporte</option>
+                <option value="4" class="tipoDoc">Cédula de extranjería</option>
+              </select>
+              <br>
+              <label for="Numero-de-identificacion" class="black-text" style="font-size: 14pt;">Número de identificación:</label>
+              <input type="text" id="Numero-de-identificacion" name="Numero-de-identificacion" placeholder="Número de identificación" required>
+              <br>
+              <br>
+              <label for="Telefono" class="black-text" style="font-size: 14pt;">Teléfono:</label>
+              <input type="text" id="Telefono" name="Telefono" placeholder="Teléfono" required>
+              <br>
+              <br>
+              <label for="Profesion" class="black-text" style="font-size: 14pt;">Profesión:</label>
+              <input type="text" id="Profesion" name="Profesion" placeholder="Profesión" required>
               <br>
               <br>
               <label for="email" class="black-text" style="font-size: 14pt;">Correo electrónico:</label>
@@ -42,11 +67,11 @@
               <br>
               <br>
               <label for="message" class="black-text" style="font-size: 14pt;">Mensaje:</label>
-              <textarea id="descripcion" name="message" rows="8" placeholder="Escribe tu comentario..." style="height: 35%;"
-                required></textarea>
+              <textarea id="descripcion" name="message" rows="8" placeholder="Escribe tu comentario..."
+                style="height: 35%;" required></textarea>
               <p></p>
               <!-- <input class="btn waves-effect waves-light material-icons" type="submit" value="Enviar"> -->
-              <button id="buttonForm" class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <button id="buttonForm" class="btn waves-effect waves-light" type="button" name="action">Submit
                 <i class="material-icons right">send</i>
               </button>
             </form>
@@ -56,11 +81,12 @@
       </div>
       <div class="image-container">
         <div class="espacio3"></div>
-        <div class="espacio3"  style="width: 500px;">
-          <h5 id="confirmacion" style="padding-top: 20%;"></h5>
-        </div> 
-        <img src="JqYP.gif" alt="loading..." style="width: 70%; height: 40%;">
         <div class="espacio3"></div>  
+        <div class="espacio3" style="width: 500px;">
+          <h5 id="confirmacion" style="padding-top: 20%;"></h5>
+        </div>
+        <img src="JqYP.gif" alt="loading..." style="width: 70%; height: 40%;">
+        <div class="espacio3"  style="width: 500px;"></div>
       </div>
     </div>
   </main>
@@ -78,7 +104,8 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="black-text">Contacto:</h5>
           <ul>
-            <li><a class="black-text text-lighten-3" href="mailto:cristianmarin991117@gmail.com">cristianmarin991117@gmail.com</a></li>
+            <li><a class="black-text text-lighten-3"
+                href="mailto:cristianmarin991117@gmail.com">cristianmarin991117@gmail.com</a></li>
             <li><a class="black-text text-lighten-3" href="#!">Celular: +57 3195534870</a></li>
           </ul>
         </div>
